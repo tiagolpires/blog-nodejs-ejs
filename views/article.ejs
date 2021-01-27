@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/article.css">
+<body>
+    <section class="edit-del">
+        <a href="/"><img src="/assets/back.svg" alt="">All articles</a>
+        <a href="/article/edit/<%= article._id %>"><img src="/assets/edit.svg" alt="">Edit</a>
+        <!-- <form action="/article/edit/<%= article._id %>">
+            <button type="submit"><span><img src="/assets/edit.svg" alt="">Edit</span></button>
+        </form> -->
+        <form action="/article/delete/<%= article._id %>" method="POST">
+            <button type="submit"><span><img src="/assets/delete.svg" alt="">Delete</span></button>
+        </form>
+    </section>
+    <section class="article">
+        <h1><%= article.title %></h1>
+        <div class="info">
+            <div class="date">
+                <img src="/calendar.svg" alt="">
+                <span><%= article.createdAt.toLocaleDateString() %></span>
+            </div>
+            <div class="time">
+                <img src="/time.svg" alt="">
+                <span><%= article.time %> min read</span>
+            </div>
+        </div>
+        <p><%= article.text %></p>
+    </section>
+</body>
+</html>

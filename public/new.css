@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.form-container{
+    padding-top: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-container h1{
+    font-size: 2.5rem;
+}
+form{
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+.title-time{
+    display: flex;
+    font-size: 1.6rem;
+}
+.title-time input{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+#title-input{
+    width: 80%;
+}
+#time-input{
+    width: 20%;
+}
+.textarea-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+form textarea{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 20px;
+    line-height: 2.2;
+    outline: none;
+}
+.save-cancel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.save-cancel a{
+    margin: 0 10px;
+    color: blue;
+}
+.save-cancel button{
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #000000;
+    color: #ffffff;
+}
+@media(max-width: 430px){
+    #title-input{
+        width: 65%;
+    }
+    #time-input{
+        width: 35%;
+    }
+}

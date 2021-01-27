@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.edit-del{
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 0 70px 0;
+    width: 90%;
+}
+.edit-del span, .edit-del a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: 0 20px 0 20px;
+}
+.edit-del img{
+    margin-right: 10px;
+    width: 30px;
+}
+.article{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 90%;
+}
+.article h1{
+    font-size: 2.5rem;
+}
+.info{
+    margin-top: 15px;
+    display: flex;
+    color: #909298;
+}
+.info span{
+    font-size: 1.2rem;
+}
+.date, .time{
+    display: flex;
+    align-items: center;
+}
+.date{
+    margin-right:30px;
+}
+.info img{
+    width: 20px;
+    margin-right: 5px;
+}
+.article p{
+    margin-top: 40px;
+    color: #5a5a5a;
+    font-size: 1.6rem;
+    line-height: 2.2;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+@media (max-width: 410px){
+    .edit-del span, .edit-del a{
+        margin: 0 10px 0 10px;
+    }
+    .edit-del img{
+        margin-right: 6px;
+        width: 20px;
+    }
+    .edit-del{
+        padding: 30px 0 40px 0;
+    }
+}

@@ -1,0 +1,11 @@
+<div class="title-time">
+  <input id="title-input" required value="<%= article.title %>" type="text" name="title" id="title" placeholder="Title">
+  <input id="time-input" required type="number" name="time" id="time" value="<%= article.time %>" placeholder="Read Time">
+</div>
+<div class="textarea-container">
+  <textarea required name="text" id="text" placeholder="Text" rows="14" cols="50"><%= article.text%></textarea>
+</div>
+<div class="save-cancel">
+  <a href="/">Cancel</a>
+  <button type="submit">Save</button>
+</div>

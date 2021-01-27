@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Blog</title>
+</head>
+<body>
+    <section class="create-section">
+        <a href="article/new"><img src="/plus.svg" alt="">New Article</a>
+    </section>
+    <section class="blog-container">
+        <div class="articles-container">
+            <% articles.forEach(article => { %>
+                    <div class="article">
+                        <a href="article/<%= article._id %>"><h2><%= article.title %></h2></a>
+                        <div class="info">
+                            <div class="date">
+                                <img src="/calendar.svg" alt="">
+                                <span><%= article.createdAt.toLocaleDateString() %></span>
+                            </div>
+                            <div class="time">
+                                <img src="/time.svg" alt="">
+                                <span><%= article.time%> min read</span>
+                            </div>
+                        </div>
+                    </div>
+            <% }) %>
+        </div>
+        <div class="creator-container">
+           <img id="creator-img" src="/male.svg">
+           <div class="info-container">
+                <h2>Tiago Pires</h2>
+                <div class="info-creator">
+                    <span>Backend Developer</span>
+                    <span>Student</span>
+                </div>
+                <a href="https://github.com/tiagolpires"><img id="githubimg" src="github.svg">GitHub</a>
+           </div>
+        </div>
+    </section>
+</body>
+</html>
